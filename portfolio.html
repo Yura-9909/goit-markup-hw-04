@@ -9,10 +9,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="./css/styles.css">
-        <title>goit-markup-hw-03</title>
+        <title>goit-markup-hw-04</title>
     </head>
     <body>
-        <header class="header-line">
+        <header>
             <div class="container container-header">
                 <a class="logo-Web" href="./index.html">Web<span class="logo-Studio">Studio</span></a>
                 <nav class="navigation">
@@ -22,8 +22,17 @@
                         <li><a class="header-nav-items" href="#">Контакти</a></li>
                     </ul>
                 </nav>                
-                <a class="header-nav-link nav-mail" href="#" target="_blank" rel="noopener noreferrer">info@devstudio.com</a>
-                <a class="header-nav-link nav-tel" href="tel:+380961111111">+380961111111</a>
+                <a class="header-nav-link nav-mail" href="#" target="_blank" rel="noopener noreferrer">
+                    <svg class="mail-icons" width="16" height="12">
+                        <use href="./images/icons.svg#icon-envelope-hover-1"></use>
+                    </svg>
+                    info@devstudio.com</a>
+                
+                <a class="header-nav-link nav-tel" href="tel:+380961111111">
+                    <svg class="tel-icons" width="10" height="16">
+                        <use href="./images/icons.svg#icon-smartphone-1"></use>
+                    </svg>
+                    +380961111111</a>
                 
             </div>
         </header>
@@ -31,11 +40,11 @@
             <section class="section-portfolio">
                 <div class="container">
                     <ul class="box-btn-items">
-                        <li><button class="btn-style-all" type="button">Усі</button></a></li>
-                        <li><button class="btn-style" type="button">Веб-сайти</button></a></li>
-                        <li><button class="btn-style" type="button">Додатки</button></a></li>
-                        <li><button class="btn-style" type="button">Дизайн</button></a></li>
-                        <li><button class="btn-style" type="button">Маркетинг</button></a></li>
+                        <li class="btn-items"><button class="btn-style-all" type="button">Усі</button></a></li>
+                        <li class="btn-items"><button class="btn-style" type="button">Веб-сайти</button></a></li>
+                        <li class="btn-items"><button class="btn-style" type="button">Додатки</button></a></li>
+                        <li class="btn-items"><button class="btn-style" type="button">Дизайн</button></a></li>
+                        <li class="btn-items"><button class="btn-style" type="button">Маркетинг</button></a></li>
                     </ul>                
                                 
                     <ul class="box-portfolio">
@@ -133,7 +142,7 @@
                     
                     </ul>
                 </div>
-            </section>
+            </section>            
             
         </main>
         <footer class="footer">
