@@ -39,13 +39,13 @@ body {
     font-size: 26px;
     line-height: 1.3076;
     font-family: 'Raleway';
+    margin-right: 93px;
 }
 .logo-Studio{
     color: #000;
     text-decoration: none;
     font-size: 26px;
-    line-height: 1.3076;
-    margin-right: 93px;
+    line-height: 1.3076;    
 }
 
 .navigation{
@@ -74,6 +74,10 @@ body {
     color: #000;
 }
 
+.header-nav-items:focus{
+    color: var(--blue-color);
+}
+
 .header-nav-link{
     font-weight: 500;
     font-size: 14px;
@@ -90,6 +94,11 @@ body {
     color: var(--blue-color);
 }
 
+.header-nav-link:focus
+{
+    color: var(--blue-color);
+}
+
 .header-nav-link:active
 {
     color: var(--title-color);
@@ -98,7 +107,6 @@ body {
 .nav-mail{
     margin-right: 50px;
 }
-
 
 .mail-icons{
     color: var(--uptitle-color);
@@ -114,6 +122,16 @@ body {
 }
 
 .header-nav-link:hover .tel-icons 
+{
+    fill: var(--blue-color);
+}
+
+.header-nav-link:focus .mail-icons
+{
+    fill: var(--blue-color);
+}
+
+.header-nav-link:focus .tel-icons 
 {
     fill: var(--blue-color);
 }
@@ -200,7 +218,7 @@ body {
 }
 
 .about-icons{
-    margin-bottom: 30px;
+    
 }
 
 .about-us{    
@@ -217,6 +235,16 @@ body {
     line-height: 1.714;       
     letter-spacing: 0.03em;    
     color: var(--uptitle-color);
+}
+
+.box-about-icon{
+    display: flex;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;    
 }
 
 /*----sectons img-----*/
@@ -244,6 +272,8 @@ body {
 .team{
     padding-top: 94px;
     padding-bottom: 94px; 
+    background-color: #F5F4FA;
+    
 }
 
 .container-team{    
@@ -251,11 +281,12 @@ body {
     display: flex;
     align-content: space-between;
     flex-wrap: nowrap;
-    flex-direction: column;          
+    flex-direction: column;             
 }
 
 .box-team-card{  
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background-color:#FFFFFF;
 }
 
 .teams-list{    
@@ -331,6 +362,13 @@ body {
     fill: #FFFFFF;
 }
 
+.team-soc-link:focus{
+    background-color: var(--blue-color);
+}
+.team-soc-link:focus .team-soc-icons{
+    fill: #FFFFFF;
+}
+
 .team-soc-icons{
     fill: rgb(175,177,184);
 }
@@ -377,6 +415,13 @@ body {
     fill: var(--blue-color);
 }
 
+.visitors-link:focus{
+    border-color: var(--blue-color);
+}
+
+.visitors-link:focus .visitors-icons{
+    fill: var(--blue-color);
+}
 /*---------------main----------------*/
 
 /*--------------footer---------------*/
@@ -429,6 +474,11 @@ body {
 .footer-mail:hover{
     color: var(--blue-color); 
 }
+
+.footer-mail:focus{
+    color: var(--blue-color); 
+}
+
 .footer-mail:active{
     color: #000; 
 }
@@ -444,13 +494,16 @@ body {
 .footer-tel:hover{
     color: var(--blue-color); 
 }
+
+.footer-tel:focus{
+    color: var(--blue-color); 
+}
 .footer-tel:active{
     color: #000; 
 }
 
 .footer-nav{
     margin-bottom: 9px;
-
 } 
 
 .footer-soc{
@@ -463,7 +516,6 @@ body {
     letter-spacing: 0.03em;
     color: #FFFFFF;
     margin-bottom: 20px;
-
 }
 
 .footer-soc-list{
@@ -491,11 +543,16 @@ body {
     fill: #FFFFFF;
 }
 
-.footer-soc-icons{
-    fill: rgb(175,177,184);
-    
+.footer-soc-link:focus{
+    background-color: var(--blue-color);
+}
+.footer-soc-link:focus .footer-soc-icons{
+    fill: #FFFFFF;
 }
 
+.footer-soc-icons{
+    fill: #FFFFFF;
+}
 
 /*--------------footer---------------*/
 
@@ -509,7 +566,6 @@ body {
     padding-top: 94px; 
     padding-bottom: 94px; 
 }
-
 
 .box-btn-items{
     list-style: none; 
@@ -530,6 +586,13 @@ body {
 .btn-style-all:hover{
     background-color: var(--blue-color);  
     cursor: pointer;
+    color: #FFFFFF;
+}
+
+.btn-style-all:focus{
+    background-color: var(--blue-color);  
+    cursor: pointer;
+    color: #FFFFFF;
 }
 
 .btn-style-all{
@@ -563,7 +626,12 @@ body {
 .btn-style:hover{
     background-color: var(--blue-color);  
     cursor: pointer; 
-    
+    color: #FFFFFF;    
+}
+.btn-style:focus{
+    background-color: var(--blue-color);  
+    cursor: pointer; 
+    color: #FFFFFF;    
 }
 
 .box-portfolio{
@@ -578,6 +646,9 @@ body {
 }
 
 .portfolio-items:hover{
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.portfolio-items:focus{
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
